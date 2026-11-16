@@ -1,0 +1,68 @@
+title: AtriaIX
+handle: "@AtriaIX"
+tagline: "Reverse Engineer"
+description: >-
+  Reverse engineering CTF writeups by Atria! (AtriaIX).
+author: Atria
+
+# Avatar shown in the sidebar. Upload your image to assets/images/ and point to it here.
+# Leave blank to show the "A" placeholder.
+avatar: "assets/images/avatar.jpg"
+favicon: "/assets/images/wizard-hat.png"
+
+
+# --- Change this once you register a domain or set up your GitHub Pages URL ---
+url: "https://AtriaIX.github.io"
+baseurl: ""
+
+# Social links — fill these in with your real profile URLs
+social:
+  github: "https://github.com/AtriaIX"
+  discord: "https://discord.com/users/1435697323547033741"
+  linkedin: "https://www.linkedin.com/in/atriaix"
+  medium: "https://medium.com/@AtriaIX"
+  x: "https://x.com/AtriaIX"
+
+# Posting categories used across the site (kept in this order on purpose)
+categories_list:
+  - name: "CTF Write-Ups"
+    url: /write-ups/
+  - name: "Labs"
+    url: /labs/
+  - name: "Malware"
+    url: /malware/
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /:year/:month/:day/:title/
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor

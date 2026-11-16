@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body>
+<div class="layout">
+  {% include sidebar.html %}
+
+  <main>
+        <h1 class="page-title">{{ page.title }}</h1>
+    {{ content }}
+
+    {% if page.category_name %}
+    <div class="post-list">
+      {% for post in site.posts %}
+        {% if post.category == page.category_name %}
+        <a class="post-item" href="{{ post.url | relative_url }}">
+          <div class="post-body">
+            <div class="post-meta">
+              <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+              <span>&middot;</span>
+              <span class="cat">{{ post.category }}</span>
+            </div>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+            {% if post.tags %}
+            <div class="post-tags">{% for tag in post.tags %}<span>#{{ tag }}</span>{% endfor %}</div>
+            {% endif %}
+          </div>
+          <div class="thumb">
+            {% if post.thumb %}
+              <img src="{{ post.thumb | relative_url }}" alt="">
+            {% else %}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 9h18M8 4v5"/></svg>
+            {% endif %}
+          </div>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </main>
+
+  {% include rail.html %}
+</div>
+</body>
+</html>
