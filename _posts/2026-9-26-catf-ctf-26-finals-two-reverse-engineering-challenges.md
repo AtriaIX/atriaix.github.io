@@ -1,11 +1,15 @@
 ---
 layout: post
 title: "CATF CTF 26 Finals — Two Reverse Engineering Challenges"
+excerpt: "My solutions for some nice challenges so far."
+tags: [reverse-engineering, rust, ida]
 thumb: /assets/images/thumbs/catf26-banner.png
 date: 2026-9-26
 last_modified_at: 2026-11-17
 category: "CTF Write-Ups"
 ---
+
+My solutions for some nice challenges so far.
 
 **Hey friends!**
 
