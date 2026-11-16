@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body>
+<div class="layout">
+  {% include sidebar.html %}
+
+  <main class="post-main">
+    <a class="back-link" href="{{ '/' | relative_url }}">&larr; Back to posts</a>
+
+    <div class="post-meta post-meta-single">
+      <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      <span>&middot;</span>
+      <span class="cat">{{ page.category }}</span>
+    </div>
+
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    {% if page.tags %}
+    <div class="post-tags post-tags-single">
+      {% for tag in page.tags %}<span>#{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
+
+    {% if page.thumb %}
+    <div class="post-hero">
+      <img src="{{ page.thumb | relative_url }}" alt="">
+    </div>
+    {% endif %}
+
+    <article class="post-content">
+      {{ content }}
+    </article>
+  </main>
+
+  {% include rail.html %}
+</div>
+</body>
+</html>
