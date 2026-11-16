@@ -7,8 +7,6 @@ last_modified_at: 2026-11-17
 category: "CTF Write-Ups"
 ---
 
-My solutions for some nice challenges so far.
-
 **Hey friends!**
 
 **I had so much fun in CATF finals and it was a really nice experience (I was laughing for 8 hours straight XD), huge thanks to all authors and organizers for this amazing event.**
