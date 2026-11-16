@@ -12,6 +12,10 @@
 
     <div class="post-meta post-meta-single">
       <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      {% if page.last_modified_at %}
+      <span>&middot;</span>
+      <span>Updated {{ page.last_modified_at | date: "%B %-d, %Y" }}</span>
+      {% endif %}
       <span>&middot;</span>
       <span class="cat">{{ page.category }}</span>
     </div>
