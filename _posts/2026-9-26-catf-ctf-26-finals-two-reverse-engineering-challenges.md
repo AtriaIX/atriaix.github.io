@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "CATF CTF 26 Finals — Two Reverse Engineering Challenges"
+thumb: /assets/images/thumbs/catf26-banner.png
 date: 2026-9-26
 last_modified_at: 2026-11-17
-category: [CTF Write-Ups]
+category: "CTF Write-Ups"
 ---
 
 My solutions for some nice challenges so far.
@@ -12,9 +13,8 @@ My solutions for some nice challenges so far.
 
 **I had so much fun in CATF finals and it was a really nice experience (I was laughing for 8 hours straight XD), huge thanks to all authors and organizers for this amazing event.**
 
-![CATF CTF banner](/assets/images/thumbs/catf26-banner.png)
-
 **In this write-up, I’ll be sharing my solutions for [ELJoOker](https://www.eljooker.tech)’s two reverse engineering challenges.**
+
 ---
 
 ## 67 iq (first blood btw)
