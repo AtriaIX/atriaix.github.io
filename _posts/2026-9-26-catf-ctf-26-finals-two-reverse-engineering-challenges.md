@@ -3,7 +3,7 @@ layout: post
 title: "CATF CTF 26 Finals — Two Reverse Engineering Challenges"
 date: 2026-9-26
 last_modified_at: 2026-11-17
-categories: [CTF Write-Ups]
+category: [CTF Write-Ups]
 ---
 
 My solutions for some nice challenges so far.
