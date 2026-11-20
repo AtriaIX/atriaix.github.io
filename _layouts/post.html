@@ -28,6 +28,15 @@
     </div>
     {% endif %}
 
+    {% assign lede_html = page.excerpt | append: "" %}
+    {% assign lede = lede_html | strip_html | strip %}
+    {% if lede != "" %}
+      {% assign body_html = content | remove_first: lede_html %}
+      <p class="post-lede">{{ lede }}</p>
+    {% else %}
+      {% assign body_html = content %}
+    {% endif %}
+
     {% if page.thumb %}
     <div class="post-hero">
       <img src="{{ page.thumb | relative_url }}" alt="">
@@ -35,7 +44,7 @@
     {% endif %}
 
     <article class="post-content">
-      {{ content }}
+      {{ body_html }}
     </article>
   </main>
 
