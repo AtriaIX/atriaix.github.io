@@ -102,3 +102,7 @@ Then continue running, when returning to the terminal we see the flag.
 ---
 
 Btw we can solve it by patching and also by actually reversing the code and getting the right input, all great and all fun.
+
+---
+
+**To be continued**
