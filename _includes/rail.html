@@ -1,23 +1,31 @@
-<aside class="rail">
-  <div class="rail-block">
-    <h3>Categories</h3>
-    {% for c in site.categories_list %}
-      {% assign count = 0 %}
-      {% for post in site.posts %}
-        {% if post.category == c.name %}{% assign count = count | plus: 1 %}{% endif %}
-      {% endfor %}
-      <div class="cat-row">
-        <a href="{{ c.url | relative_url }}"><span>{{ c.name }}</span><span>{{ count }}</span></a>
-      </div>
-    {% endfor %}
-  </div>
+<div class="rail-col">
+  {% if page.layout == "post" %}
+  <aside class="rail toc-win" id="tocWin" hidden>
+    <nav class="toc" id="toc" aria-label="Contents"></nav>
+  </aside>
+  {% endif %}
 
-  <div class="rail-block">
-    <h3>Recently updated</h3>
-    <div class="rail-list">
-      {% for post in site.posts limit:5 %}
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  <aside class="rail">
+    <div class="rail-block">
+      <h3>Categories</h3>
+      {% for c in site.categories_list %}
+        {% assign count = 0 %}
+        {% for post in site.posts %}
+          {% if post.category == c.name %}{% assign count = count | plus: 1 %}{% endif %}
+        {% endfor %}
+        <div class="cat-row">
+          <a href="{{ c.url | relative_url }}"><span>{{ c.name }}</span><span>{{ count }}</span></a>
+        </div>
       {% endfor %}
     </div>
-  </div>
-</aside>
+
+    <div class="rail-block">
+      <h3>Recently updated</h3>
+      <div class="rail-list">
+        {% for post in site.posts limit:5 %}
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </aside>
+</div>
