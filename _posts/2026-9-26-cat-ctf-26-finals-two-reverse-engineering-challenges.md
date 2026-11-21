@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CATF CTF 26 Finals — Two Reverse Engineering Challenges"
+title: "CAT CTF 26 Finals — Two Reverse Engineering Challenges"
 excerpt: "My solutions for some nice challenges so far."
 tags: [reverse-engineering, rust, ida]
 thumb: /assets/images/thumbs/catf26-banner.png
@@ -105,4 +105,4 @@ Btw we can solve it by patching and also by actually reversing the code and gett
 
 ---
 
-**To be continued**
+**To be continued soon..**
