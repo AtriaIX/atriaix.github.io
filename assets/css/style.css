@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600;700&display=swap');
-
 :root{
   --bg:#16161a; --win:#18181d; --panel:#212126; --line:#2c2c31;
   --ink:#e3e3e6; --soft:#adadb3;
-  --ac:#413c5e;  
+  --ac:#413c5e;
   --ac2:#a198cb;
   --bar:#24213a;
   --sel:#2a2742;
   --btn:#5a5478;
   --sh:#0a0a0c; --code:#101013;
-  --av:clamp(120px,17vh,160px);
+  --av:clamp(130px,20vh,190px);
   --font:'Inter',system-ui,sans-serif;
   --mono:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;
 }
-
 
 *{box-sizing:border-box;margin:0;padding:0}
 html{overflow-x:hidden}
@@ -33,7 +31,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px dashed va
 body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:3000;
   background:repeating-linear-gradient(0deg,rgba(0,0,0,.06) 0,rgba(0,0,0,.06) 1px,transparent 1px,transparent 3px)}
 
-
 .layout{display:grid;grid-template-columns:290px minmax(0,1fr) 260px;gap:22px;padding:22px;align-items:start}
 .layout-narrow{grid-template-columns:290px minmax(0,1fr)}
 .sidebar,main,.rail{background:var(--win);border:2px solid var(--ac);box-shadow:5px 5px 0 var(--sh)}
@@ -46,7 +43,6 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:3000;
 .sidebar::before{content:"profile.exe";align-self:stretch;margin:0 -20px 22px;flex-shrink:0}
 main::before{content:"atriaix.exe";margin:0 -28px 26px}
 .rail::before{content:"info.exe";margin:0 -20px 22px}
-
 
 .sidebar{
   position:sticky;top:22px;height:calc(100vh - 44px);overflow-y:auto;padding:0 20px 20px;
@@ -61,15 +57,15 @@ main::before{content:"atriaix.exe";margin:0 -28px 26px}
 .sb-name{font-family:'Pixelify Sans',var(--font);font-size:34px;font-weight:700;line-height:1}
 .sb-handle{margin:4px 0 8px;font-size:17px;font-weight:600;color:var(--ac2)}
 .sb-tagline{max-width:240px;margin-bottom:14px;font-size:15px;color:var(--soft)}
-.sb-social{width:var(--av);display:flex;flex-wrap:wrap;gap:10px;margin-bottom:6px}
+.sb-social{width:100%;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
 .sb-social a{
-  flex:1 1 calc((100% - 20px)/3);min-width:0;aspect-ratio:1;
+  flex:1 1 calc((100% - 24px)/4);min-width:0;aspect-ratio:1;
   display:flex;align-items:center;justify-content:center;gap:10px;
   background:var(--panel);border:2px solid var(--ac);color:var(--ac2)}
-.sb-social a svg{width:26px;height:26px}
+.sb-social a svg{width:24px;height:24px}
+.sb-social a img{width:24px;height:24px;object-fit:contain;flex:none}
 .sb-social a.wide{flex-basis:100%;aspect-ratio:auto;height:42px;font-size:15px;font-weight:600;color:var(--ink)}
 .sb-social a.wide svg{width:20px;height:20px;color:var(--ac2)}
-.sb-social a.wide img{width:20px;height:20px;object-fit:contain;flex:none}
 .sb-social a:hover{background:var(--sel);border-color:var(--ac2)}
 .sb-nav{width:100%;display:flex;flex-direction:column;gap:8px;margin-top:22px;text-align:center}
 .sb-nav>a,.sb-cats summary{
@@ -82,7 +78,6 @@ main::before{content:"atriaix.exe";margin:0 -28px 26px}
 .sb-cats a{display:block;margin-top:8px;padding:7px 12px;font-size:15px;color:var(--soft);background:var(--panel);border:2px solid var(--line)}
 .sb-cats a:hover{background:var(--sel);border-color:var(--ac);color:var(--ink)}
 .sb-foot{margin-top:auto;padding-top:12px;font-size:13px;color:var(--soft)}
-
 
 main{min-width:0;padding:0 28px 32px}
 .section-label{margin-bottom:16px;font-size:20px;font-weight:800}
@@ -122,7 +117,6 @@ main{min-width:0;padding:0 28px 32px}
 .thumb svg{width:46px;height:46px}
 .thumb img{width:100%;height:100%;object-fit:cover}
 
-
 .rail-col{
   position:sticky;top:22px;display:flex;flex-direction:column;gap:22px;
   max-height:calc(100vh - 44px);overflow-y:auto;padding:0 6px 6px 0;scrollbar-width:none}
@@ -143,7 +137,6 @@ main{min-width:0;padding:0 28px 32px}
 .cat-row:last-child{border-bottom:0}
 .cat-row a{display:flex;justify-content:space-between;width:100%}
 .cat-row a:hover{color:var(--ink)}
-
 
 .back-link{display:inline-block;margin-bottom:18px;color:var(--ac2)}
 .back-link:hover{color:#fff}
@@ -175,7 +168,6 @@ main{min-width:0;padding:0 28px 32px}
 .post-content th{font-weight:600;color:var(--ink)}
 .post-content hr{margin:28px 0;border:0;border-top:2px dashed var(--line)}
 
-
 .archive-group{margin-bottom:30px}
 .archive-group h3{margin-bottom:10px;font-size:19px;font-weight:700;color:var(--ac2)}
 .archive-row{display:flex;align-items:baseline;gap:16px;padding:6px 0;font-size:15px;border-bottom:2px dashed var(--line)}
@@ -183,7 +175,6 @@ main{min-width:0;padding:0 28px 32px}
 .a-title{color:var(--ink)}
 .archive-row:hover .a-title{color:var(--ac2)}
 .a-cat{margin-left:auto;flex-shrink:0;color:var(--ac2)}
-
 
 .badge-grid,.tool-row{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 28px}
 .skill-badge,.tool-pill{padding:2px 12px;font-size:14.5px;color:var(--ink);background:var(--panel);border:2px solid var(--line)}
@@ -198,7 +189,6 @@ main{min-width:0;padding:0 28px 32px}
   background:var(--ac2);animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.terminal-widget .t-cursor{animation:none}}
-
 
 .discord-widget{
   display:flex;align-items:center;gap:16px;max-width:440px;margin:10px 0 24px;padding:16px 20px;
@@ -220,7 +210,6 @@ main{min-width:0;padding:0 28px 32px}
   max-width:260px;margin-top:3px;font-size:15px;color:var(--soft);
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
-
 .nav-toggle{
   display:none;position:fixed;top:14px;left:14px;z-index:1001;width:44px;height:44px;padding:0;
   align-items:center;justify-content:center;cursor:pointer;
@@ -234,7 +223,6 @@ main{min-width:0;padding:0 28px 32px}
 .nav-overlay{display:none;position:fixed;inset:0;z-index:998;background:rgba(0,0,0,.6);opacity:0;transition:opacity .35s ease}
 .nav-overlay.open{display:block;opacity:1}
 
-
 @media (min-width:1700px){
   body{font-size:17px}
   .layout{grid-template-columns:320px minmax(0,1fr) 300px}
@@ -245,7 +233,6 @@ main{min-width:0;padding:0 28px 32px}
   .rail-col{display:none}
   .post-item{grid-template-columns:minmax(0,1fr) 290px}
 }
-
 @media (max-width:890px){
   .nav-toggle{display:flex}
   .layout,.layout-narrow{grid-template-columns:1fr;padding:70px 14px 14px}
@@ -253,7 +240,7 @@ main{min-width:0;padding:0 28px 32px}
     position:fixed;top:0;left:0;z-index:1000;width:300px;max-width:84vw;height:100vh;box-shadow:none;
     transform:translateX(-100%);transition:transform .4s cubic-bezier(.4,0,.2,1)}
   .sidebar.open{transform:translateX(0)}
-  .sidebar{--av:150px}
+  .sidebar{--av:160px}
   .sb-nav>a,.sb-cats summary{padding:12px}
   .sb-cats a{padding:10px 12px}
   main{padding:0 16px 24px}
