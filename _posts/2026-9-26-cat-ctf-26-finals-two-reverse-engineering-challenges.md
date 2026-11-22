@@ -98,11 +98,7 @@ Then continue running, when returning to the terminal we see the flag.
 ![flag in terminal](/assets/images/catf26/flag.png)
 
 And here we go!
-```
-CATF{QU1CK_BR41N_W4RM_UP}
-```
-
----
+**Flag:** `CATF{QU1CK_BR41N_W4RM_UP}`
 
 Btw we can solve it by patching and also by actually reversing the code and getting the right input, all great and all fun.
 
