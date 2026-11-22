@@ -97,7 +97,8 @@ Then continue running, when returning to the terminal we see the flag.
 
 ![flag in terminal](/assets/images/catf26/flag.png)
 
-**CATF{QU1CK_BR41N_W4RM_UP}**
+
+And here we go! **CATF{QU1CK_BR41N_W4RM_UP}**
 
 ---
 
