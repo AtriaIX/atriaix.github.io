@@ -9,7 +9,6 @@ last_modified_at: 2026-11-23
 category: "CTF Write-Ups"
 ---
 
-My solutions for some nice challenges so far.
 
 **Hey friends!**
 
@@ -152,13 +151,17 @@ Before going into the code, let me tell you about Rust's strings.
 
 In C, a string is a pointer to the first character, and you find the end by walking forward until you hit a 0 byte (the NUL terminator), something like this:
 
-`ptr ==> ['c' | 'o' | 'o' | 'k' | 'i' | 'e' | 0 ]  <-- wakes untill the 0`
+```
+ptr ==> ['c' | 'o' | 'o' | 'k' | 'i' | 'e' | 0 ]  <-- wakes untill the 0
+```
 
 Rust doesn't do that. It stores the length right next to the pointer, somthing like this:
 
-`(ptr, len) = (0x9000, 6)`
+```
+(ptr, len) = (0x9000, 6)
 
-`0x9000 ==> ['c' | 'o' | 'o' | 'k' | 'i' | 'e']   <-- no 0 at the end, len says "6"`
+0x9000 ==> ['c' | 'o' | 'o' | 'k' | 'i' | 'e']   <-- no 0 at the end, len says "6"
+```
 
 So a (&str) is this two values travelling together in two registers **(rdi, rsi)**, if you see a pointer followed by a number that looks like a length, think about it being a (&str).
 
