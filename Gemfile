@@ -1,7 +1,5 @@
 source "https://rubygems.org"
 
-# This uses the same Jekyll + plugin versions GitHub Pages runs in production,
-# so if it builds locally it will build on GitHub Pages too.
 gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do

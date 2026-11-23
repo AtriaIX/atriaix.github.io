@@ -36,7 +36,8 @@ When I'm not in my wizard form, I be an **ECE student** .. also, you will often 
   var lines = [
     "chasing fluffy cats...",
     "eating yummy apples...",
-    "missing around on Pluto...",
+    "missing around on pluto...",
+    "learning new spells...",
   ];
   var li = 0, ci = 0, deleting = false;
   var el = document.getElementById('statusLine');
