@@ -138,7 +138,9 @@ So I went to the strings and found interesting things.
 
 Finding where this string is being used, it's at the end of a huge function.
 
-![IDA Graph](/assets/images/catf26/ida13.png)
+![correct string](/assets/images/catf26/ida13.png)
+
+![IDA Graph](/assets/images/catf26/ida14.png)
 
 *XD*
 
@@ -158,15 +160,15 @@ So a (&str) is this two values travelling together in two registers **(rdi, rsi)
 
 Returning to our function, first thing we see is this:
 
-![enter the flag](/assets/images/catf26/ida14.png)
+![enter the flag](/assets/images/catf26/ida15.png)
 
 *the other stuff here are some checks on `stdout`, actually we may talk about it later*
 
 Then I started scrolling hopping to find something interesting, till I found this block:
 
-![block](/assets/images/catf26/ida15.png)
+![block](/assets/images/catf26/ida16.png)
 
-![flag first check](/assets/images/catf26/ida16.png)
+![flag first check](/assets/images/catf26/ida17.png)
 
 *after checking what we assumed is the length, (v46) will be the pointer to every byte of this "thing", then the if condition next is checking if the first 4 bytes are `0x46544143` by XORing them and if so, that should be zero, then checking if the next byte after them `(_QWORD)v31 + 4` is `0x7B`, and the last byte should == `125` (0x7D).. both 2 XORs should result in 0, and every line starts with `&&` must be true so the condition be true.*
 
@@ -176,7 +178,7 @@ So now we know that this is checking on our flag.
 
 The next (&&)s are checking on the stuff between the "{}" (chars from index [5] to [36] in the flag) :
 
-![hex check](/assets/images/catf26/ida16.png)
+![hex check](/assets/images/catf26/ida18.png)
 
 *So the char must be 0–9 or a-f, which is a hex digit.*
 
