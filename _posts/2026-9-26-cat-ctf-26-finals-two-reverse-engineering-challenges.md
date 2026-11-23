@@ -19,9 +19,11 @@ My solutions for some nice challenges so far.
 
 ---
 
-## 67 iq (first blood btw)
+## 67 iq
 
 ![67 iq challenge card](/assets/images/catf26/67.png)
+
+**I got first blood here btw**
 
 We got Linux file here, in DIE:
 
