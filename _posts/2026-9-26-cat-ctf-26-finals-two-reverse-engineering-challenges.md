@@ -159,7 +159,6 @@ Rust doesn't do that. It stores the length right next to the pointer, somthing l
 
 ```
 (ptr, len) = (0x9000, 6)
-
 0x9000 ==> ['c' | 'o' | 'o' | 'k' | 'i' | 'e']   <-- no 0 at the end, len says "6"
 ```
 
