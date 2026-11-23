@@ -23,7 +23,7 @@ My solutions for some nice challenges so far.
 
 ![67 iq challenge card](/assets/images/catf26/67.png)
 
-**I got first blood here btw**
+**I got first blood here btw :3**
 
 We got Linux file here, in DIE:
 
@@ -103,6 +103,8 @@ And here we go!
 **Flag:** `CATF{QU1CK_BR41N_W4RM_UP}`
 
 Btw we can solve it by patching and also by actually reversing the code and getting the right input, all great and all fun.
+
+That was the easy one, let's see the next.
 
 ---
 

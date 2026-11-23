@@ -6,9 +6,9 @@ permalink: /about/
 
 Hey, I'm **Maryam** (aka Atria), and I'm actually a **retired mage**.
 
-I like any cybersecurity-related stuff, but I think I'll be into low-level the most. Sometimes I play CTFs and write nice stuff (hopefully) under the handle **AtriaIX**, mainly in **Reverse Engineering**.
+I like any cybersecurity-related thing, but I think I'm into low-level the most. Sometimes I play **CTFs** and write nice stuff (hopefully) under the handle **AtriaIX**, mainly in **Reverse Engineering**.
 
-When I'm not in my wizard form, I be an **ECE student** .. also, you will often see me chilling with my **wizard cat** (his spells are top tier).
+When I'm not in my wizard form, I be an **ECE student** .. also, most of the time you will see me chilling with my **wizard cat** (his spells are top tier).
 
 ## Languages & Tools
 
