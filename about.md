@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hey, I'm **Maryam**
-
+Hey, I'm **Maryam**.
 
 ## Languages & Tools
 
