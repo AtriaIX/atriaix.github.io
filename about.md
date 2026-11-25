@@ -17,7 +17,7 @@ Hey, I'm **Maryam**.
   <span class="tool-pill">IDA Pro</span>
   <span class="tool-pill">Ghidra</span>
   <span class="tool-pill">GDB</span>
-  <span class="tool-pill">x86dbg</span>
+  <span class="tool-pill">x96dbg</span>
   <span class="tool-pill">dnSpy</span>
   <span class="tool-pill">Wireshark</span>
 </div>
